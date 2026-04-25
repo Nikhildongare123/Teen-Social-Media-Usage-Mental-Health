@@ -5,7 +5,7 @@ import pickle
 # -------------------------------
 # Load Model + Encoders
 # -------------------------------
-with open("model.pkl", "rb") as f:
+with open("model(1).pkl", "rb") as f:
     data = pickle.load(f)
 
 model = data["model"]
