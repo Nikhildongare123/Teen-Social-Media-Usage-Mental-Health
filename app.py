@@ -64,6 +64,28 @@ with st.sidebar:
     - 🟡 **Medium Risk**: Some concerns present
     - 🔴 **High Risk**: Multiple factors indicate need for attention
     """)
+    
+    # Developer Information
+    st.markdown("---")
+    st.header("👨‍💻 Developer")
+    
+    # Developer details with styling
+    st.markdown("""
+    **Nikhil Dongare**
+    
+    🔗 [LinkedIn Profile](https://www.linkedin.com/in/nikhil-dongare-5958092ba)
+    
+    📞 **Contact:** +91 9860438482
+    
+    📧 **Email:** nikhil.dongare@example.com
+    
+    ---
+    **Connect with me:**
+    """)
+    
+    # Optional: Add a contact button
+    if st.button("📱 Contact Me"):
+        st.info("📞 You can reach me at: **9860438482**")
 
 # -------------------------------
 # Main Form
@@ -316,13 +338,29 @@ with st.expander("💡 Mental Health Tips & Resources"):
     """)
 
 # -------------------------------
-# Footer
+# Footer with Developer Info
 # -------------------------------
 st.markdown("---")
-col_f1, col_f2, col_f3 = st.columns(3)
+
+# Create footer columns
+col_f1, col_f2, col_f3 = st.columns([1, 2, 1])
+
+with col_f1:
+    st.caption("⚠️ **Disclaimer:** This tool is for educational purposes only")
+
 with col_f2:
-    st.caption("⚠️ **Disclaimer:** This tool is for educational purposes only and not a substitute for professional medical advice, diagnosis, or treatment.")
     st.caption(f"📍 Last updated: {datetime.now().strftime('%Y-%m-%d')}")
+    st.caption("💻 Developed with ❤️ for mental health awareness")
+
+with col_f3:
+    # Developer info in footer
+    st.markdown("""
+    <div style='text-align: right'>
+        <b>Nikhil Dongare</b><br>
+        <a href='https://www.linkedin.com/in/nikhil-dongare-5958092ba' target='_blank'>🔗 LinkedIn</a> | 
+        📞 9860438482
+    </div>
+    """, unsafe_allow_html=True)
 
 # Add custom CSS for better styling
 st.markdown("""
@@ -337,6 +375,17 @@ st.markdown("""
     }
     .stAlert {
         border-radius: 10px;
+    }
+    .sidebar .sidebar-content {
+        background-color: #f0f2f6;
+    }
+    /* Style for LinkedIn link */
+    a {
+        color: #0077b5;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
     }
 </style>
 """, unsafe_allow_html=True)
