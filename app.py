@@ -5,7 +5,7 @@ import pickle
 # -------------------------------
 # Load Model
 # -------------------------------
-with open("model.pkl", "rb") as f:
+with open("model (2).pkl", "rb") as f:
     model = pickle.load(f)
 
 # -------------------------------
