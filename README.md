@@ -1,3 +1,5 @@
+## App Link
+https://teen-social-media-usage-mental-health.streamlit.app/
 # 🧠 Mental Health Risk Prediction System
 
 An AI-based web application that predicts mental health risk (Low, Medium, High) among teenagers based on their social media usage, lifestyle, and behavioral patterns.
@@ -35,18 +37,6 @@ This project uses Machine Learning to analyze factors like:
 - Scikit-learn
 - Matplotlib & Seaborn
 - Streamlit
-
----
-
-## 📂 Project Structure
-project/
-│
-├── app.py # Streamlit app
-├── model.pkl # Trained ML model
-├── data.csv # Dataset
-├── train_model.py # Model training script
-├── requirements.txt # Dependencies
-└── README.md # Project documentation
 
 ## 📊 Input Features
 Age (13–19)
